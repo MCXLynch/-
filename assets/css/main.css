@@ -25,6 +25,10 @@
   letter-spacing: 1px;
 	}
 	
+video {
+  width: 100%;
+  height: auto;
+}
 .headertop {
   width: 100%;
   display: table;
@@ -34,7 +38,7 @@
   background: url(/images/pic001.jpg) bottom center;
   background-size: cover;
   background-attachment: fixed;
-  box-shadow: 0 0 15px #e44c65;
+  box-shadow: 0 0 15px rgb(245, 3, 63) 228, 101；
 }
 	@media screen and (min-width: 1681px) {
 .plive {
@@ -4066,3 +4070,13 @@
 					}
 
 	}
+	/* 弹窗 */
+	#myButton {
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	  }
