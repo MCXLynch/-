@@ -6,7 +6,7 @@
 .content {
     position: absolute;
     font-size: 40px;
-    top: 0;
+    top: 0.5;
     bottom: 0;
     color: rgb(250, 116, 63);
     text-align: center;
@@ -21,6 +21,8 @@ body{
     background-image: url(/imges/Meetbjt.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    width: auto;
+    height: auto;
 }
 
 .card{
@@ -77,7 +79,7 @@ body{
 
 /* 这里加个黑色到透明的渐变背景，可以更好的看清楚名字 */
 .card .photo::before{
-    content: "";
+    content: "about";
     position: absolute;
     width: 100%;
     height: 100%;
