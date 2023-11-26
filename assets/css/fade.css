@@ -1,0 +1,16 @@
+
+   #fade-in-box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+#fade-in-box.fade-in {
+  opacity: 1;
+}
+
+#fade-in-button {
+  margin-top: 20px;
+}

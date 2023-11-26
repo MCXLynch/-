@@ -13,7 +13,7 @@
 	</head>
 	<body class="landing">
 		<div id="page-wrapper">
-			<audio autoplay="autoplay"><source src="/Killers From.mp3" type="audio/mpeg" /></audio>
+			<audio id="myAudio"><source src="/Killers From.mp3" type="audio/mpeg" /></audio>
 			<!-- Header -->
 				<header id="header">
 					<h1 id="logo"><a href="/">𝗔𝗡𝗚 𝗦𝗧𝗔𝗗</a></h1>
@@ -131,8 +131,8 @@
 				<section id="five" class="wrapper style2 special fade">
 					<div class="container">
 						<header>
-							<h2>紧急客服</h2>
-							<p>QQ群：949860511</p>
+							<h2>𝗔𝗡𝗚 𝗦𝗧𝗔𝗗客户端</h2>
+							<p>包更新 包售后 绕检测</p>
 						</header>
 						</div>
 		
@@ -173,5 +173,11 @@ var _hmt = _hmt || [];
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-
+			<script>
+				var audio = document.getElementById("myAudio");
+				audio.onended = function() {
+					audio.pause();
+				};
+				audio.play();
+			</script>
 	</body>

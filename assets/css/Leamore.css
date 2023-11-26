@@ -1,11 +1,155 @@
-body{
+::selection{background:#169ADA;text-shadow:none;color:#fff;}
+::-webkit-scrollbar{width:10px;height:8px;}
+::-webkit-scrollbar-button{display:none}
+::-webkit-scrollbar-track{background-color:black}
+::-webkit-scrollbar-track-piece{background:#ddd}
+::-webkit-scrollbar-thumb{background-color: #e44c65;}
+::-webkit-scrollbar-thumb:hover{background-color:#3B3B3B}
+::-webkit-scrollbar-corner{background-color:#535353}
+::-webkit-scrollbar-resizer{background-color:#FF6E00}
+img{
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+@keyframes elastic {
+  0%, 50% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.centered-element {
+  top: 60%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  background: url('images/赞助码.jpg') no-repeat center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  z-index: 9;
+  opacity: 1;
+  transition: opacity 3s ease-in-out;
+  transform-origin: center;
+  margin: 0 auto;
+  animation-name: elastic;
+  animation-duration: 3s;
+  animation-iteration-count: 2;
+  animation-timing-function: ease-in-out;
+}
+body
+{
+  opacity: 1;
+  content{
+    font-size: 20px;
+    width: left;
+  }
+  #page-wrapper {
+		padding-top: 3.5em;
+    
+	}
+  .nav ul li {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+	#header {
+	background: rgba(136, 139, 168, 0.5);
+	box-shadow: 0 10px 10px rgba(179, 168, 168, 0.25);
+	cursor: default;
+	height: 3.5em;
+	left: 0;
+	line-height: 3.5em;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+	}
+
+		#header h1 {
+			border: 5px;
+      color: white;
+      display: inline-block;
+      height: 2em;
+      line-height: 2em;
+      padding: 0 1.25em;
+      border-radius: 10px;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0.0), transparent);
+      background-size: auto;
+      font-size: 20px;
+      padding: 20px;
+		}
+
+		#header nav {
+			position: absolute;
+			right: 1em;
+			top: 0;
+		}
+
+			#header nav ul {
+				margin: 0;
+			}
+
+				#header nav ul li {
+					display: inline-block;
+					margin-left: 1em;
+				}
+
+					#header nav ul li a, #header nav ul li span {
+						border: 0;
+						color: inherit;
+						display: inline-block;
+						height: inherit;
+						line-height: inherit;
+						outline: 0;
+					}
+
+						#header nav ul li a.button, #header nav ul li span.button {
+						border: 5px solid;
+            color: inherit;
+            display: inline-block;
+            height: 2em;
+            line-height: 2em;
+            padding: 0 1.25em;
+            border-radius: 10px;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0.5), transparent);
+            background-size: auto;
+            font-size: 20px;
+            padding: 20px;
+						}
+
+						#header nav ul li a:not(.button):before, #header nav ul li span:not(.button):before {
+							margin-right: 0.5em;
+						}
+
+					#header nav ul li.active > a, #header nav ul li.active > span {
+						color: #e44c65;
+					}
+
+					#header nav ul li > ul {
+						display: none;
+					}
+
+body.landing::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+	body.landing #header {
+		background: transparent;
+		box-shadow: none;
+		position: absolute;
+	}
   font-family: system-ui;
   background-image: url(/images/Leamore.jpg);
-  color: white;
   text-align: center;
   font-weight: 100;
-  top: 1;
 }
+
 #banner{
   background-image: rgba(0,0,0,0.5);
   width: 100%;
@@ -15,3 +159,147 @@ body{
   left: 0;
   z-index: 1;
 }
+#page-wrapper {
+  padding-top: 3.5em;
+}
+
+  #header h1 {
+    height: inherit;
+    left: 1.25em;
+    line-height: inherit;
+    margin: 1;
+    position: absolute;
+    top: 0;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.767);;
+    background-size: 100px;
+    color: #169ADA;
+  }
+
+  #header nav {
+    position: absolute;
+    right: 1em;
+    top: 0;
+  }
+
+    #header nav ul {
+      margin: 0;
+      background-color: rgba(255, 255, 255, 0.3); /* 白色背景*/
+      box-shadow: 1 10px 10px 2 rgba(0,0,0,0.2); /* 水平偏移 垂直偏移 模糊距离 阴影颜色 */
+      border-radius: 10px;
+      
+    }
+
+      #header nav ul li {
+        display: inline-block;
+        margin-left: 2em;
+        border-radius: 20px;
+        background-size: 100% 100%;
+        font-size: 10px;
+        padding: 20px;
+      }
+
+        #header nav ul li a, #header nav ul li span {
+            color: inherit;
+            display: inline-block;
+            line-height: 2em;
+            padding: 0 1.25em;
+            border-radius: 10px;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0.5), transparent);
+            background-size: auto;
+            font-size: 20px;
+            padding: 20px;
+        }
+
+          #header nav ul li a.button, #header nav ul li span.button {
+            border: 5px ;
+            color: inherit;
+            display: inline-block;
+            line-height: 2em;
+            padding: 0 1.25em;
+            border-radius: 10px;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0.5), transparent);
+            background-size: auto;
+            font-size: 20px;
+            padding: 20px;
+
+          #header nav ul li a:not(.button):before, #header nav ul li span:not(.button):before {
+            margin-right: 0.5em;
+          }
+
+        #header nav ul li.active > a, #header nav ul li.active > span {
+          color: #e44c65;
+        }
+
+        #header nav ul li > ul {
+          display: none;
+        }
+
+body.landing #page-wrapper {
+  padding-top: 0;
+}
+
+body.landing #header {
+  background: transparent;
+  box-shadow: none;
+  position: absolute;
+}
+          }
+          @media screen and (max-width: 768px) {
+            .centered-element {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            width: 500px;
+            height: 500px;
+            background: url('images/赞助码.jpg') no-repeat center center;
+            background-size: cover;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            opacity: 1;
+            transition: opacity 1s ease-in-out;
+         }
+            .sidebar {
+            width: 200px;
+            }
+            .openbtn {
+            font-size: 16px;
+            }
+            }
+            
+            /*这里是我写的css代码，我是用了bootstrap的框架，所以我就不用写css了，我只需要在html文件中引入bootstrap的css文件就可以了。
+          */
+          *{
+            padding: 0px;
+            margin:0px;
+        }
+        .con_img{
+          position: relative; 
+          width: 100%; 
+          height: auto;
+          z-index: -1;
+          }
+      .ms{
+          position: absolute; 
+          /*position: relative;*/
+          bottom: 5px;
+          left: 0; 
+          width: 100%; 
+          height: 50%;  
+          background: #030303;
+          opacity: 0.5;
+          filter:alpha(opacity=60);
+          -moz-opacity:0.6;
+          z-index: 1;
+          }
+      .toumingzi{
+          width: 100%;
+          left: 10px;
+          position: absolute;
+          top: 50%;
+      }
+      .image{
+          width:100%;
+          height:auto;
+      }
+   
