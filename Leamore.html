@@ -5,26 +5,14 @@
     <link rel="stylesheet" type="text/css" href="Leamore.css">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>" />
     <meta charset="utf-8" />
+    <!-- 添加一个meta标签，禁止浏览器缩放 -->
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, 
+     user-scalable=no"/>
     <script src="https://cdn.staticfile.org/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://www.w3schools.cn/lib/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
-     .centered-element {
-            position: absolute;
-            top: 60%;
-            left: 50%;
-            width: 500px;
-            height: 500px;
-            background: url('images/赞助码.jpg') no-repeat center center;
-            background-size: cover;
-            transform: translate(-50%, -50%);
-            z-index: 2;
-            opacity: 1;
-            transition: opacity 1s ease-in-out;
-            margin: 0 auto;
-            transform-origin: center center;
-           /* 设置元素的变换动画，持续0.5秒，使用ease-in-out速度曲线 */
-          transition: transform 0.5s ease-in-out;
-        }
+    
         body {
             font-family: "Lato", sans-serif;
         }
@@ -81,6 +69,26 @@
             transition: margin-left .5s;
             padding: 16px;
         }
+
+        /* 添加媒体查询，根据不同的屏幕尺寸和分辨率，调整样式和布局 */
+        @media screen and (max-width: 768px) {
+          .openbtn {
+            font-size: 16px;
+          }
+          .sidebar {
+            width: 200px;
+          }
+          .sidebar a {
+            font-size: 20px;
+          }
+          .centered-element {
+            width: 300px;
+            height: 300px;
+          }
+          .bjtimg {
+            width: 100%;
+          }
+        }
     </style>
     <title>了解更多</title>
     <meta charset="utf-8">
@@ -120,7 +128,8 @@
     </div>
     <section id="one" class="main">
     <div class="content">
-        <img class= "bjtimg" src="/images/Leamore.jpg" id="Leamore">
+        <!-- 添加一个srcset属性，指定不同的图片源 -->
+        <img class= "bjtimg" src="/images/Leamore.jpg" srcset="/images/Leamore-small.jpg 400w, /images/Leamore.jpg 800w" id="Leamore">
         <span class="ms"></span>
     <div class="toumingzi">
         <h2 id="scenic_title"><font-color="#FFFFFF">生活不易，写端卖艺！</font-color></h2>
