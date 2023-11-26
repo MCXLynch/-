@@ -29,6 +29,7 @@
             overflow-x: hidden;
             transition: 0.5s;
             padding-top: 60px;
+            z-index: 99;
         }
         
         .sidebar a {
@@ -38,6 +39,7 @@
             color: #818181;
             display: block;
             transition: 0.3s;
+            
         }
         
         .sidebar a:hover {
@@ -50,6 +52,7 @@
             right: 25px;
             font-size: 36px;
             margin-left: 50px;
+            
         }
         
         .openbtn {
@@ -59,6 +62,7 @@
             color: white;
             padding: 10px 15px;
             border: none;
+            z-index: 99;
         }
         
         .openbtn:hover {
@@ -70,7 +74,6 @@
             padding: 16px;
         }
 
-        /* 添加媒体查询，根据不同的屏幕尺寸和分辨率，调整样式和布局 */
         @media screen and (max-width: 768px) {
           .openbtn {
             font-size: 16px;
