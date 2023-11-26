@@ -39,6 +39,13 @@ img{
   animation-iteration-count: 2;
   animation-timing-function: ease-in-out;
 }
+/* 如果设备的最大宽度是 768px，表示是手机或平板，显示 Leamore_small.jpg 作为背景图片 */
+@media (max-width: 768px) {
+  .centered-element {
+    background: url('images/Leamore-small.jpg') no-repeat center center;
+    background-size: cover;
+  }
+}
 body
 {
   opacity: 1;
