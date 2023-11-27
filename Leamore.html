@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" id='font-awesome-css' href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css" type='text/css' media='all'>
     <link rel="stylesheet" href="https://www.w3schools.cn/lib/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="Leamore.css">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>" />
@@ -29,7 +30,9 @@
             overflow-x: hidden;
             transition: 0.5s;
             padding-top: 60px;
-	    z-index:99;
+            z-index: 99;
+
+
         }
         
         .sidebar a {
@@ -39,6 +42,7 @@
             color: #818181;
             display: block;
             transition: 0.3s;
+            
         }
         
         .sidebar a:hover {
@@ -51,6 +55,7 @@
             right: 25px;
             font-size: 36px;
             margin-left: 50px;
+            
         }
         
         .openbtn {
@@ -60,6 +65,7 @@
             color: white;
             padding: 10px 15px;
             border: none;
+            z-index: 99;
         }
         
         .openbtn:hover {
@@ -71,7 +77,6 @@
             padding: 16px;
         }
 
-        /* 添加媒体查询，根据不同的屏幕尺寸和分辨率，调整样式和布局 */
         @media screen and (max-width: 768px) {
           .openbtn {
             font-size: 16px;
@@ -100,7 +105,6 @@
     <!--/* 导航栏 */-->
     <body class="landing">
 		<div id="page-wrapper">
-			<audio autoplay="autoplay"><source src="/Killers From.mp3" type="audio/mpeg" /></audio>
             <div id="mySidebar" class="sidebar">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                 <a href="/">主页</a>
@@ -156,5 +160,8 @@
         }
         
         </script>
+        <script src="https://cdn.staticfile.org/jquery/3.5.1/jquery.min.js"></script>
+        <div id="music" key="6563ea392493e" api="https://y.cenguigui.cn"></div>
+        <script id="xplayer" src="https://y.cenguigui.cn/Static/player2/js/player.js"></script>
 </body>
 </html>
